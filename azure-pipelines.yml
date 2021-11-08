@@ -18,14 +18,14 @@ steps:
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'ARMME'
-    subscriptionId: '1c97e8fc-0515-494b-94f2-01d15b41c22d' #Change for yours
+    subscriptionId: 'a82ff9af-8108-4887-abd9-34c33bb4f063' #Change for yours
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'arm-quickstart-templates-another'
+    resourceGroupName: 'arm-quickstart-templates'
     location: 'westeurope'
     templateLocation: 'Linked artifact'
     csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
     csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
-    overrideParameters: '-webAppName dejann-another'
+    overrideParameters: '-webAppName dejann-another2'
     #-administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
     deploymentMode: 'Incremental'
 
