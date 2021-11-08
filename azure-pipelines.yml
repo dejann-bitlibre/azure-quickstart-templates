@@ -10,7 +10,7 @@ pool: #linux
 steps:
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'quickstarts/microsoft.web/webapp-basic-linux'
+    SourceFolder: 'quickstarts/microsoft.web/web-app-sql-database'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
