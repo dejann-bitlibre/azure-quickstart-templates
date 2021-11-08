@@ -20,7 +20,7 @@ steps:
     azureResourceManagerConnection: 'ARMME'
     subscriptionId: 'a82ff9af-8108-4887-abd9-34c33bb4f063' #Change for yours
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'ARMPipelinesDAVE-rg'
+    resourceGroupName: 'arm-quickstart-templates'
     location: 'westeurope'
     templateLocation: 'Linked artifact'
     csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
