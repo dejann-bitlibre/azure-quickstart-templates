@@ -10,7 +10,7 @@ pool: linux
 steps:
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'quickstarts/microsoft.web/web-app-sql-database'
+    SourceFolder: 'quickstarts/microsoft.web/microsoft.network/azure-bastion'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
@@ -25,7 +25,7 @@ steps:
     templateLocation: 'Linked artifact'
     csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
     csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
-    overrideParameters: '-webAppName dejann-another2'
+    overrideParameters: '-webAppName dejann-bastion'
     #-administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
     deploymentMode: 'Incremental'
 
