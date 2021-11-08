@@ -10,7 +10,7 @@ pool: #linux
 steps:
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'quickstarts/microsoft.web/microsoft.network/azure-bastion'
+    SourceFolder: 'quickstarts/microsoft.network/azure-bastion'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
